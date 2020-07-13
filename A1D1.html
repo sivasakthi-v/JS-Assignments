@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <style>
+        h1 {
+            margin-top: 100px;
+        }
+        
+        .print:link, .print:visited {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #2a8dff; 
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            transition: border 0.1s, color 0.1s;
+        }
+        
+        .print:hover, .print:active {
+            background-color: #0063d6;
+            color: #fff;
+            transition: color 0.1s;
+        }
+    
+    </style>
+</head>
+
+    <body>
+        <div align="center">
+        <h1>LetsUpgrade JScript</h1>
+        <h2>Assignments - Day 1</h2>
+    
+        <br>
+        
+        <p id="sample"></p>
+        <script> 
+        var day = new Date();
+        var wday = new Array(7);
+            wday[0] = "Sunday";
+            wday[1] = "Monday";
+            wday[2] = "Tuesday";
+            wday[3] = "Wednesday";
+            wday[4] = "Thursday";
+            wday[4] = "Friday";
+            wday[6] = "Saturday";
+        var td = wday[day.getDay()];    
+        document.getElementById('sample').innerHTML="Today is = "+td+".";
+        </script>
+        
+        <p id="sample_1"></p>
+        <script> 
+        var today = new Date();
+        var time = today.getHours()+':'+(today.getMinutes()+1)+':'+today.getSeconds();
+        document.getElementById('sample_1').innerHTML="Current Time is = "+time+".";
+        </script>
+        
+        <br>
+        
+        <p id="sample_2"></p>
+        <script> 
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        document.getElementById('sample_2').innerHTML="YYYY-MM-DD Format = "+date+".";
+        </script>
+        
+        <p id="sample_3"></p>
+        <script> 
+        var doday = new Date();
+        var date = doday.getDate()+'-'+(doday.getMonth()+1)+'-'+doday.getFullYear();
+        document.getElementById('sample_3').innerHTML="DD-MM-YYYY Format = "+date+".";
+        </script>
+    
+        <br>   
+    
+    <a class="print" href="javascript:window.onclick = window.print().reload;">Print This Page</a>
+    </div>
+    </body>
+        
+</html>
