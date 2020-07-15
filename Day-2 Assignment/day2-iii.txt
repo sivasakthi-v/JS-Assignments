@@ -1,0 +1,13 @@
+DATATYPES - JS
+
+String          - represents sequence of characters e.g. "siva"
+Number       - represents numeric values e.g. 369
+Boolean       - represents boolean value either false or true
+Undefined   -  represents undefined value
+Null             - represents null i.e. no value at all
+
+NON-PRIMITIVE:
+
+Object   -  represents instance through which we can access members
+Array    -  represents group of similar values
+RegExp  -  represents regular expression
