@@ -1,0 +1,94 @@
+<html>
+<head>
+    
+    </head>
+    <title>LetsUpgrade Assignments</title>
+    <style>
+        
+        .head {
+            margin-top: 150px;
+        }
+        
+    .cprint:link, .cprint:visited {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #2a8dff; 
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            transition: border 0.1s, color 0.1s;
+        }
+        
+        .cprint:hover, .cprint:active {
+            background-color: #0063d6;
+            color: #fff;
+            transition: color 0.1s;
+        }
+        
+        .cage:link, .cage:visited {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #ff7e2d; 
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            transition: border 0.1s, color 0.1s;
+        }
+        
+        .cage:hover, .cage:active {
+            background-color: #fa6000;
+            color: #fff;
+            transition: color 0.1s;
+        }
+        
+        .sam:link, .sam:visited {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #03ea6d; 
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            transition: border 0.1s, color 0.1s;
+        }
+        
+        .sam:hover, .sam:active {
+            background-color: #00c45a;
+            color: #fff;
+            transition: color 0.1s;
+        }
+        </style>
+    
+    <body>
+    <div align="center">
+    <h2 class="head">Day 2 Assignments</h2>
+       
+     <br>
+        <script>
+            function cprint()
+            {
+            let cpt = prompt("Print Your Data in Console","Enter Your Data");
+            console.log(cpt);
+            }
+        </script>
+        
+        <script>
+        function pcage(){
+            if(prompt("Confirm Your Age To Drink","Enter Your Age")<=21)
+                {
+                    console.log("Cannot Drink");
+                }
+            
+            else{
+                console.log("Can Drink");
+            }
+        }
+        </script>
+        <a class="cprint" href="javascript:window.onclick = cprint();">Click Here To Print Your Data in Console</a>
+        <br><br><br>
+        <a class="cage" href="javascript:window.onclick = pcage();">Click Here To Confirm Your Age To Drink</a>
+        <br><br><br>
+        <a class="sam" href="SA%20Methods.html">Click Here For String and Array Methods</a>
+        </div>
+    
+    </body>
+</html>

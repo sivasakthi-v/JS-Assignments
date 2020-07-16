@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+    <style>
+        .head {
+            color: #0063d6;
+            margin-top: 230px;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+   
+    <div align="center" class="head">
+    <h1>String and Array Methods</h1>
+    <h3><i>See Console For Code Results</i></h3>
+    </div>
+</body>
+<script>
+    //STRING methods
+        let value = "helloworld";
+        console.log(value.charAt(0)); //returns the word
+        console.log(value.length); // return the length of the string
+        console.log(value.charCodeAt()); // returns the unicode value
+        console.log(value.concat(" Siva")); // concat the given string with the value variable
+        console.log(value.endsWith("d")); // return true (boolean) if ends with the given argument
+        console.log(value.indexOf("w")); //return the index number
+        console.log(value.toLowerCase()); // convert everything into small letters
+        console.log(value.toUpperCase()); //convert everything into capital letters
+        console.log(value+" ".trim()); // removes the space at starting and ending of the string
+        console.log(value.split("o")); //splits the word by given value "o" in the form of arrays
+        console.log(value.search("d")); // returns the index nummber by regexp
+
+    //Array methods
+        //array can contains all the datatypes
+        let arr = [1,true,"Siva",0.01,["s","a"],{name:"Siva"},null,undefined];
+        console.log(arr.length);// return the length
+        console.log(arr.pop()); // removes the element from the array by default removes the last element
+        console.log(arr.push(undefined)); // add the elemnt in the last index
+        console.log(arr.reverse()); // return the reversed array
+        console.log(arr.slice(2,7)); //return the subarray
+        console.log(arr.toString()); // return the array in string represntation
+</script>
+</html>
