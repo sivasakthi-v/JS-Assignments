@@ -1,0 +1,184 @@
+<html>
+<head>
+    
+    </head>
+    <title>LetsUpgrade Assignments</title>
+    <style>
+        
+        .head {
+            margin-top: 50px;
+        }
+        
+    .cooe:link, .cooe:visited, .cosv:link, .cosv:visited, .pmg:link, .pmg:visited {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            transition: border 0.1s, color 0.1s;
+        }
+         
+        .cooe:hover, .cooe:active, .cosv:hover, .cosv:active, .pmg:hover, .pmg:active {
+            transition: color 0.1s;
+        }
+        
+        .cooe:link, .cooe:visited {
+            background-color: #2a8dff; 
+        }
+        
+       .cooe:hover, .cooe:active {
+        background-color: #0063d6;
+        }
+       
+        .cosv:link, .cosv:visited {
+          background-color: #ff7e2d; 
+        }
+        
+        .cosv:hover, .cosv:active {
+            background-color: #fa6000;
+        }
+        
+       .pmg:link, .pmg:visited {
+
+            background-color: #03ea6d; 
+
+        }
+        
+        .pmg:hover, .pmg:active {
+            background-color: #00c45a;
+        }
+        
+        </style>
+    
+    <body>
+    <div align="center">
+        <h1 class="head">Day 3 Assignments</h1>
+        <h3><i>See Console For Code Results</i></h3> 
+        <br><br>
+       
+     <script>
+        
+         function ooe()
+         { 
+            var num = prompt("Check a Number is Odd or Even","Enter Your Number");
+            console.log(`The Number is ${num}`);
+            
+            if(num % 2 == 0)
+            {
+            console.log(`The Number You Entered is ${num} and Number is Even`);
+            }
+            else
+             {
+            console.log(`The Number You Entered is ${num} and Number is Odd`);
+              }
+        }
+         
+         function osv()
+         {   
+             
+             var os = "Unknown OS";
+             if(navigator.appVersion.indexOf('Win')!= -1) os = "Windows";
+             if(navigator.appVersion.indexOf('Mac')!= -1) os = "MacOS";
+             if(navigator.appVersion.indexOf('X11')!= -1) os = "UNIX OS";
+             if(navigator.appVersion.indexOf('Linux')!= -1) os = "Linux OS";
+             var nov = window.navigator.platform;
+             console.log(`Input : ${os} ${nov}`);
+             console.log(`The OS Name is ${os} and Version is ${nov}`);   
+         }
+            
+         function mGrade()
+         {
+             var mark = prompt("Check Your Grades","Enter Your Mark");
+             console.log(`Your Mark is ${mark}`);
+             var gradec;
+             
+             if(mark>85)
+                 {
+                 gradec ='A';
+             }
+            
+             if(mark>70)
+                 {
+                 gradec ='B';
+             }
+             
+             if(mark>55)
+                 {
+                 gradec ='C';
+             }
+             
+             if(mark>=45)
+                 {
+                 gradec ='Pass';
+             }
+             
+             else {
+                 gradec = 'Fail';
+             }
+             
+             console.log(`Your Mark is ${mark} and Grade is ${gradec}`);
+         }
+       
+        
+      
+          function mGradet()
+         {
+            var markTer = prompt("Check Your Grades","Enter Your Mark");
+            console.log(`Input : ${markTer}`);
+            var gradet = markTer>85 ? 'A' : markTer>70 ? 'B' : markTer>55 ? 'C' : markTer>=45 ? 'Pass' : 'Fail';  
+            console.log(`Your Mark is ${markTer} and Grade is ${gradet}`);
+         }
+        
+          
+         function mGrades()
+         {
+            let marks = prompt("Check Your Grades","Enter Your Mark");
+            console.log(`Input : ${marks}`);
+            let grades = "No Marks";
+             
+             switch(true)
+                 {
+                case (marks>85):
+                      grades ='A';
+                      break;
+                    
+                case (marks>70):
+                      grades ='B';
+                      break;
+                    
+                case (marks>55): 
+                      grades ='C';
+                      break;
+                    
+                case (marks>=45): 
+                      grades ='Pass';
+                      break;
+                         
+                case (marks<45): 
+                      grades ='Fail';
+                      break;
+
+                default: 
+                    console.log("Enter a Mark To Check Grades");
+                    break;
+               }
+             
+             console.log(`Your Mark is ${marks} and Grade is ${grades}`);
+         }
+                         
+
+                                   
+</script>
+        
+        <a class="cooe" href="javascript:window.onclick = ooe();">Click Here to Check a Number is Odd or Even</a>
+        <br><br><br>
+        <a class="cosv" href="javascript:window.onclick = osv();">Click Here To Know Your OS Name And Version</a>
+        <br><br><br><br>
+        <h2>Check Your Marks With Grades In Console</h2><br>
+        <a class="pmg" href="javascript:window.onclick = mGrade();">Using Conditional Statements</a>
+        <a class="pmg" href="javascript:window.onclick = mGradet();">Using Ternary Operator</a>
+        <a class="pmg" href="javascript:window.onclick = mGrades();">Using Switch Case</a>
+        
+     </div>
+    </body>
+</html>
