@@ -75,15 +75,20 @@
          
          function osv()
          {   
+             var osVersion = prompt("Enter Your OS Name _SPACE_ Version","Eg. Android 9");
+             var cprint = osVersion.split(" ");
+             console.log(`Input : ${cprint[0]} ${cprint[1]}`);
+            console.log(`The OS Name is ${cprint[0]} and Version is ${cprint[1]}`);
+        
              
-             var os = "Unknown OS";
+             /*var os = "Unknown OS";
              if(navigator.appVersion.indexOf('Win')!= -1) os = "Windows";
              if(navigator.appVersion.indexOf('Mac')!= -1) os = "MacOS";
              if(navigator.appVersion.indexOf('X11')!= -1) os = "UNIX OS";
              if(navigator.appVersion.indexOf('Linux')!= -1) os = "Linux OS";
              var nov = window.navigator.platform;
              console.log(`Input : ${os} ${nov}`);
-             console.log(`The OS Name is ${os} and Version is ${nov}`);   
+             console.log(`The OS Name is ${os} and Version is ${nov}`); */  
          }
             
          function mGrade()
@@ -172,7 +177,7 @@
         
         <a class="cooe" href="javascript:window.onclick = ooe();">Click Here to Check a Number is Odd or Even</a>
         <br><br><br>
-        <a class="cosv" href="javascript:window.onclick = osv();">Click Here To Know Your OS Name And Version</a>
+        <a class="cosv" href="javascript:window.onclick = osv();">Click Here To Split Your OS Name And Version</a>
         <br><br><br><br>
         <h2>Check Your Marks With Grades In Console</h2><br>
         <a class="pmg" href="javascript:window.onclick = mGrade();">Using Conditional Statements</a>
