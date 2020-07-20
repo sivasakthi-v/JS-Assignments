@@ -1,0 +1,246 @@
+<html>
+<head>
+    
+    </head>
+    <title>LetsUpgrade Assignments</title>
+    <style>
+        .cfizzbuzz:link, .cfizzbuzz:visited, 
+        .cdestruct:link, .cdestruct:visited, 
+        .cshop:link, .cshop:visited,
+        .carrow:link, .carrow:visited,
+        .ccal:link, .ccal:visited,
+        .cgnum:link, .cgnum:visited{
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            transition: border 0.1s, color 0.1s;
+        }
+         
+        .cfizzbuzz:hover, .cfizzbuzz:active,
+        .cdestruct:hover, .cdestruct:active,
+        .cshop:hover, .cshop:active,
+        .carrow:hover, .carrow:active,
+        .ccal:hover, .ccal:active,
+        .cgnum:hover, .cgnum:active{
+            transition: color 0.1s;
+        }
+        
+        .cfizzbuzz:link, .cshop:link, .cfizzbuzz:visited, .cshop:visited,
+        .cgnum:link, .cgnum:visited {
+            background-color: #2a8dff; 
+        }
+        
+       .cfizzbuzz:hover, .cfizzbuzz:active, .cshop:hover, .cshop:active,
+        .cgnum:hover, .cgnum:active {
+        background-color: #0063d6;
+        }
+       
+        .cdestruct:link, .cdestruct:visited, .carrow:link, .carrow:visited,
+        .ccal:link, .ccal:visited {
+          background-color: #ff7e2d; 
+        }
+        
+        .cdestruct:hover, .cdestruct:active, .carrow:hover, .carrow:active,
+        .ccal:hover, .ccal:active {
+            background-color: #fa6000;
+        }
+        
+        cdestruct
+        </style>
+    
+    <body>
+    <div align="center">
+    <h2 class="head">Day 4 Assignments</h2>
+    <h3><i>See Console For Code Results</i></h3> 
+    <br><br>
+        
+        
+       <script>
+           
+        function fizzBuzz()
+           {
+               let arr = [];
+               for(let i=1; arr.length<100; i++)
+                   {
+                       if(i % 3 == 0)
+                           {
+                               arr.push("Fizz");
+                           }
+                      else if(i % 5 == 0)
+                           {
+                               arr.push("Buzz");
+                           }
+                       else if(i % 3 == 0 || i % 5 == 0)
+                           {
+                               arr.push("FizzBuzz");
+                           }
+                       else
+                           {
+                               arr.push(i);
+                           }
+                   }
+                       console.log(arr);
+            }
+           
+          
+           function deStruct()
+           {
+               const student =
+               {
+                   name : "Siva",
+                   age : 20,
+                   projects : 
+                   {
+                       diceGame: "Two player dice game using Javascript",
+                   }
+               }
+               
+               const {name, age, projects:{diceGame} }= student;
+               console.log(name, age, diceGame);
+               
+           }
+           
+           function shopping()
+           {
+               var shoppingList = ['Kitkat','Nissin Noodles','Milano','Moongdal','Cola'];
+               var shoppingBasket  = [...shoppingList,'Cola', 'Nutella', 'Bread','Milkshake'];
+               console.log(`Products: ${shoppingBasket}`);
+               
+               }
+               
+            
+           
+           function arrow()
+           {
+               
+              var ask = (question, yes, no) => {
+                  if (confirm(question)) yes()
+                  else no();
+              } 
+               
+               var result = ask("Do You Agree?",
+               function() { alert("You Agreed."); },
+               function() { alert("You Cancelled the Execution."); });
+           }
+           
+           
+           function cal() {
+               
+                const calculator = {
+                        result : 0,
+                       
+                    add : function(value) {
+                            this.result = value + this.result;
+                            return `Result is ${this.result}`;
+                        },
+                    
+                    sub : function(value) {
+                            this.result = this.result - value ;
+                            return `Result is ${this.result}`;
+                        },
+                        
+                    mul : function(value) {
+                            this.result = this.result * value ;
+                            return `Result is ${this.result}`;
+                        },
+                        
+                    div : function(value) {
+                            this.result = this.result / value;
+                            return `Result is ${this.result}`;
+                        },
+                        
+                    sqrt : Math.floor(Math.sqrt),
+                        
+                    clear : function () {
+                            this.result = 0;
+                            return `Result is ${this.result}`;
+                        },
+                        
+                    equal : function () {
+                            return `Result is ${this.result}`;
+                        } 
+
+                    }
+                    console.log(calculator.equal())
+                    console.log(calculator.add(9))
+                    console.log(calculator.sub(6))
+           }
+           
+          
+           function gNumber()
+           {
+              var num = prompt("Enter a Number Greater Than 100","Enter Your Number");
+              var cnum = (num < 100 || false) ? window.alert("Enter Valid Number") : console.log(num);
+           }
+           
+           
+          
+           //Slaes Manager
+           
+           
+           function manage(sales) 
+           
+           { 
+                    console.log(`
+                    let sales = document.getElementById().value;
+                    let comm;
+                    switch (true) {
+                      case sales >= 0 && sales < 5001:
+                        comm = sales * 0.02;
+                        break;
+                      case sales >= 5001 && sales < 10001:
+                        comm = 5000 * 0.02 + (sales - 5000) * 0.05;
+                        break;
+                      case sales >= 10001 && sales < 20001:
+                        comm = 5000 * 0.02 + 5000 * 0.05 + (sales - 10000) * 0.07;
+                        break;
+                      case sales >= 20001:
+                        comm = 5000 * 0.02 + 5000 * 0.05 + 10000 * 0.07 + (sales - 20000) * 0.1;
+                        break;
+                    }
+                    
+                   document.getElementById("netcomm").innerHTML =
+                      "Net Commision in Rs.:&nbsp &nbsp" + comm;
+                  }`);
+                    
+           }
+           
+           
+           
+           
+           //Prime Number
+           
+           function prime()
+           { 
+               
+            console.log(`
+             let n = 10; 
+              let nextPrime :
+                for (let i = 2; i <= n; i++) { // for each i...
+
+                  for (let j = 2; j < i; j++) { // look for a divisor..
+                    if (i % j == 0) continue nextPrime; // not a prime, go next i
+                  }
+
+                  alert( i ); // a prime
+                } `);
+            
+            
+        </script>
+        
+        
+       
+        <a class="cfizzbuzz" href="javascript:window.onclick = fizzBuzz();">FizzBuzz</a>
+        <a class="cdestruct" href="javascript:window.onclick = deStruct();">Destructure</a>
+        <a class="cshop" href="javascript:window.onclick = shopping();">Shopping</a>
+        <a class="carrow" href="javascript:window.onclick = arrow();">Arrow Function</a>
+        <br><br>
+        <a class="ccal" href="javascript:window.onclick = cal();">Calculator</a>
+        <a class="cgnum" href="javascript:window.onclick = gNumber();">Great Number</a>
+
+        </div>
+    
+    </body>
+</html> 
